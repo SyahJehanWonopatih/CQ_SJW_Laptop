@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnHitungMhs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,18 +52,28 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(108, 347);
+            this.btnConnect.Location = new System.Drawing.Point(150, 347);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect\r\n";
             this.btnConnect.UseVisualStyleBackColor = true;
             // 
+            // btnHitungMhs
+            // 
+            this.btnHitungMhs.Location = new System.Drawing.Point(275, 347);
+            this.btnHitungMhs.Name = "btnHitungMhs";
+            this.btnHitungMhs.Size = new System.Drawing.Size(75, 23);
+            this.btnHitungMhs.TabIndex = 3;
+            this.btnHitungMhs.Text = "Hitung Mhs";
+            this.btnHitungMhs.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
@@ -78,6 +89,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnHitungMhs;
     }
 }
 
