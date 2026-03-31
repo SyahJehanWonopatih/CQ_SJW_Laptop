@@ -33,12 +33,13 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnHitungMhs = new System.Windows.Forms.Button();
             this.btnHitungMK = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(232, 109);
+            this.label1.Location = new System.Drawing.Point(218, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // txtHasil
             // 
-            this.txtHasil.Location = new System.Drawing.Point(299, 106);
+            this.txtHasil.Location = new System.Drawing.Point(285, 106);
             this.txtHasil.Name = "txtHasil";
             this.txtHasil.Size = new System.Drawing.Size(326, 20);
             this.txtHasil.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             // btnHitungMhs
             // 
-            this.btnHitungMhs.Location = new System.Drawing.Point(275, 347);
+            this.btnHitungMhs.Location = new System.Drawing.Point(299, 347);
             this.btnHitungMhs.Name = "btnHitungMhs";
             this.btnHitungMhs.Size = new System.Drawing.Size(75, 23);
             this.btnHitungMhs.TabIndex = 3;
@@ -71,18 +72,28 @@
             // 
             // btnHitungMK
             // 
-            this.btnHitungMK.Location = new System.Drawing.Point(422, 347);
+            this.btnHitungMK.Location = new System.Drawing.Point(449, 347);
             this.btnHitungMK.Name = "btnHitungMK";
             this.btnHitungMK.Size = new System.Drawing.Size(75, 23);
             this.btnHitungMK.TabIndex = 4;
             this.btnHitungMK.Text = "Hitung Mk";
             this.btnHitungMK.UseVisualStyleBackColor = true;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(605, 347);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnHitungMK);
             this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
@@ -102,6 +113,7 @@
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnHitungMhs;
         private System.Windows.Forms.Button btnHitungMK;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
