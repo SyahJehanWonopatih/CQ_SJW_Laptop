@@ -175,7 +175,7 @@ namespace PraktikumADO
 
                 if (barisTerpengaruh > 0)
                 {
-                    MessageBox.Show("Data Program Studi berhasil ditambahkan.");
+                    MessageBox.Show("Sip! Data Program Studi berhasil ditambahkan.");
                 }
 
                 conn.Close();
