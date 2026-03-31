@@ -129,5 +129,35 @@ namespace PraktikumADO
             }
         
         }
+
+        private void btnUpdateMK_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'";
+
+                cmd = new SqlCommand(query, conn);
+
+                int barisTerpengaruh = cmd.ExecuteNonQuery();
+
+                if (barisTerpengaruh > 0)
+                {
+                    MessageBox.Show("Berhasil! " + barisTerpengaruh + " baris data Mata Kuliah berhasil di-update.");
+                }
+                else
+                {
+                    MessageBox.Show("Gagal update. KodeMK 'IF210101' nggak ketemu di database.");
+                }
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
