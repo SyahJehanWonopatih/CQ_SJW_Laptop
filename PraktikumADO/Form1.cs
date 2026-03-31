@@ -20,11 +20,28 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Koneksi()
         {
             conn = new SqlConnection(
                 "Data Source=TeraByte\\SYAHJEHAN00;Initial Catalog=DBAkademikADO;Integrated Security=True"
         );
+        }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                MessageBox.Show("Koneksi Ke Database Berhasil");
+
+                conn.Close();
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

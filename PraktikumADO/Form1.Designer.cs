@@ -60,6 +60,7 @@
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect\r\n";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnHitungMhs
             // 
