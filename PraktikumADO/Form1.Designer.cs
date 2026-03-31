@@ -30,12 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 109);
+            this.label1.Location = new System.Drawing.Point(232, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
@@ -43,16 +44,26 @@
             // 
             // txtHasil
             // 
-            this.txtHasil.Location = new System.Drawing.Point(326, 106);
+            this.txtHasil.Location = new System.Drawing.Point(299, 106);
             this.txtHasil.Name = "txtHasil";
             this.txtHasil.Size = new System.Drawing.Size(326, 20);
             this.txtHasil.TabIndex = 1;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(108, 347);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 2;
+            this.btnConnect.Text = "Connect\r\n";
+            this.btnConnect.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -66,6 +77,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
+        private System.Windows.Forms.Button btnConnect;
     }
 }
 
