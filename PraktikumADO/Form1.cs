@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PraktikumADO
 {
     public partial class Form1 : Form
     {
+        SqlConnection conn;
+        SqlCommand cmd;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(
+                "Data Source=TeraByte\\SYAHJEHAN00;Initial Catalog=DBAkademikADO;Integrated Security=True"
+        );
         }
     }
 }
