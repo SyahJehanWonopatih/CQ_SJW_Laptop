@@ -1,6 +1,6 @@
 ﻿namespace PraktikumADO
 {
-    partial class Form1
+    partial class btnInsert
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDosen = new System.Windows.Forms.Button();
             this.btnUpdateMK = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -114,11 +115,22 @@
             this.btnUpdateMK.UseVisualStyleBackColor = true;
             this.btnUpdateMK.Click += new System.EventHandler(this.btnUpdateMK_Click);
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(339, 387);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "insert program study";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdateMK);
             this.Controls.Add(this.btnDosen);
             this.Controls.Add(this.btnUpdate);
@@ -127,7 +139,7 @@
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "btnInsert";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,6 +156,7 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDosen;
         private System.Windows.Forms.Button btnUpdateMK;
+        private System.Windows.Forms.Button button1;
     }
 }
 

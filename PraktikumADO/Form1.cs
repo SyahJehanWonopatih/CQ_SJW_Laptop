@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace PraktikumADO
 {
-    public partial class Form1 : Form
+    public partial class btnInsert : Form
     {
         SqlConnection conn;
         SqlCommand cmd;
-        public Form1()
+        public btnInsert()
         {
             InitializeComponent();
         }
@@ -38,7 +38,7 @@ namespace PraktikumADO
 
                 conn.Close();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -127,7 +127,7 @@ namespace PraktikumADO
             {
                 MessageBox.Show(ex.Message);
             }
-        
+
         }
 
         private void btnUpdateMK_Click(object sender, EventArgs e)
@@ -150,6 +150,32 @@ namespace PraktikumADO
                 else
                 {
                     MessageBox.Show("Gagal update. KodeMK 'IF210101' nggak ketemu di database.");
+                }
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
+
+                cmd = new SqlCommand(query, conn);
+
+                int barisTerpengaruh = cmd.ExecuteNonQuery();
+
+                if (barisTerpengaruh > 0)
+                {
+                    MessageBox.Show("Data Program Studi berhasil ditambahkan.");
                 }
 
                 conn.Close();
